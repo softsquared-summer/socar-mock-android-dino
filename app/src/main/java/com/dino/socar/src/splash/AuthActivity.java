@@ -20,7 +20,8 @@ public class AuthActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auth_activity);
 
-        auth_btn.setOnClickListener(new View.OnClickListener() {
+        Button auth_btn = (Button) findViewById(R.id.auth_btn);
+      auth_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AuthActivity.this, MidActivity.class);
