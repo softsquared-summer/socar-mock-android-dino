@@ -15,7 +15,7 @@ public class MidActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.mid_activity);
+        setContentView(R.layout.activity_mid);
         viewPager = (ViewPager)findViewById(R.id.mid_ViewPager);
         mid_adapter = new Mid_Adapter(this);
         viewPager.setAdapter(mid_adapter);

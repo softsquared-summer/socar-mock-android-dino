@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/activity_login">
+    android:id="@+id/activity_login"
+    >
 
 
     <LinearLayout
+        android:id="@+id/activity_login2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/login_background"
@@ -22,12 +24,12 @@
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="20sp"
             android:layout_marginLeft="30dp"
             android:text="@string/login"
             android:textColor="#000000"
-            android:textSize="25dp"
-            android:textStyle="bold"></TextView>
+            android:textSize="25sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/login_id"
@@ -35,9 +37,9 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:hint="가입한 이메일 주소 입력"
+            android:hint="@string/email"
             android:textColorHint="#A9A9A9"
-            android:textStyle="bold" />
+             />
 
         <EditText
             android:id="@+id/login_password"
@@ -45,9 +47,9 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:hint="비밀번호 입력"
+            android:hint="@string/password"
             android:textColorHint="#A9A9A9"
-            android:textStyle="bold" />
+             />
 
         <Button
             android:id="@+id/login_btn"
@@ -57,7 +59,52 @@
             android:layout_marginTop="35dp"
             android:background="@color/colorPrimary"
             android:text="@string/login"
+            android:textSize="18sp"
             android:textColor="@color/login_background"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/profile"/>
+        <GridLayout
+            android:id="@+id/sns_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            android:layout_marginTop="250dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signkakao"
+                android:background="@color/login_background"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signnaver"
+                android:layout_marginLeft="10sp"
+                android:background="@color/login_background"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signfacebook"
+                android:layout_marginLeft="10sp"
+                android:background="@color/login_background"/>
+
+
+        </GridLayout>
+
+
+
     </LinearLayout>
+
 </RelativeLayout>
