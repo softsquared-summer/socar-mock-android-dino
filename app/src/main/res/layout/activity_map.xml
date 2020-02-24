@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
 
     <fragment
         android:layout_width="match_parent"
@@ -10,4 +15,6 @@
         android:id="@+id/main_fg_map"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-</LinearLayout>
+    <include layout="@layout/activity_drawer"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

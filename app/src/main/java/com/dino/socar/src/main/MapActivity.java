@@ -1,7 +1,10 @@
 package com.dino.socar.src.main;
 
 import android.os.Bundle;
+import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
 
 import com.dino.socar.R;
@@ -15,6 +18,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private DrawerLayout mdrawerLayout;
+    private View mdrawerView;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +27,27 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
         SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.main_fg_map);
         mapFragment.getMapAsync(this);
+        mdrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mdrawerView = (View) findViewById(R.id.main_drawerView);
+        mdrawerLayout.openDrawer(mdrawerView);
     }
+    DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {
+        @Override
+        public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+        }
+
+        @Override
+        public void onDrawerOpened(@NonNull View drawerView) {
+        }
+
+        @Override
+        public void onDrawerClosed(@NonNull View drawerView) {
+        }
+
+        @Override
+        public void onDrawerStateChanged(int newState) {
+        }
+    };
 
 
     @Override
