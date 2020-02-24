@@ -52,6 +52,7 @@ public class AuthActivity extends BaseActivity {
                     Toast.makeText(getApplicationContext(), "앱권한설정하세요.", Toast.LENGTH_LONG).show();
                 }
             }
+
         }
     }
 }

@@ -31,8 +31,9 @@
         android:theme="@style/AppTheme.Base">
 
       <meta-data
-          android:name="com.google.android.geo.AIzaSyApLEdh5YYL0lo5orFdw_NtlPDsGvw0miQ"
-          android:value="GoogleMapApi"/>
+          android:name="com.google.android.geo.API_KEY"
+          android:value="AIzaSyApLEdh5YYL0lo5orFdw_NtlPDsGvw0miQ"/>
+
         <activity android:name=".src.splash.SplashActivity"
             android:theme="@style/AppTheme.Splash">
 
@@ -43,8 +44,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".src.splash.AuthActivity"/>
-
-        <activity android:name=".src.mid.MidActivity"/>
+        <activity android:name=".src.main.MapActivity"/>
         <activity android:name=".src.main.MainActivity">
         </activity>
     </application>
