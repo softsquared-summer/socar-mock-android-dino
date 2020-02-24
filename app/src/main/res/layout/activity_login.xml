@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:id="@+id/activity_login"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -17,19 +16,19 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_back_black_24dp"
-            android:background="@color/login_background"/>
+            android:background="@color/login_background"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
 
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="20sp"
             android:text="@string/login"
             android:textColor="#000000"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/login_id"
@@ -38,8 +37,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:hint="@string/email"
-            android:textColorHint="#A9A9A9"
-             />
+            android:textColorHint="#A9A9A9" />
 
         <EditText
             android:id="@+id/login_password"
@@ -48,8 +46,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:hint="@string/password"
-            android:textColorHint="#A9A9A9"
-             />
+            android:textColorHint="#A9A9A9" />
 
         <Button
             android:id="@+id/login_btn"
@@ -59,50 +56,52 @@
             android:layout_marginTop="35dp"
             android:background="@color/colorPrimary"
             android:text="@string/login"
-            android:textSize="18sp"
             android:textColor="@color/login_background"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/login_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
             android:layout_gravity="center"
-            android:textSize="18sp"
+            android:layout_marginTop="30sp"
+            android:text="@string/profile"
             android:textColor="#000000"
-            android:text="@string/profile"/>
+            android:textSize="18sp" />
+
         <GridLayout
             android:id="@+id/sns_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:rowCount="1"
-            android:columnCount="3"
             android:layout_gravity="center"
-            android:layout_marginTop="250dp">
+            android:layout_marginTop="250dp"
+            android:columnCount="3"
+            android:orientation="vertical"
+            android:rowCount="1">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/signkakao"
-                android:background="@color/login_background"/>
+                android:background="@color/login_background"
+                android:src="@drawable/signkakao" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/signnaver"
                 android:layout_marginLeft="10sp"
-                android:background="@color/login_background"/>
+                android:background="@color/login_background"
+                android:src="@drawable/signnaver" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/signfacebook"
                 android:layout_marginLeft="10sp"
-                android:background="@color/login_background"/>
+                android:background="@color/login_background"
+                android:src="@drawable/signfacebook" />
 
 
         </GridLayout>
-
 
 
     </LinearLayout>

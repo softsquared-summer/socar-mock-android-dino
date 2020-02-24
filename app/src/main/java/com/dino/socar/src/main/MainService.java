@@ -9,9 +9,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.dino.socar.src.ApplicationClass.getRetrofit;
-public class MainService {
-    private final MainActivityView mMainActivityView;;
 
+public class MainService {
+    private final MainActivityView mMainActivityView;
+    ;
 
     MainService(MainActivityView mainActivityView) {
         this.mMainActivityView = mainActivityView;
@@ -27,7 +28,6 @@ public class MainService {
                     mMainActivityView.validateFailure(null);
                     return;
                 }
-
                 mMainActivityView.validateSuccess(defaultResponse.getMessage());
             }
 

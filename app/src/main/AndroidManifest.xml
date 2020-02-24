@@ -29,6 +29,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Base">
+
+      <meta-data
+          android:name="com.google.android.geo.AIzaSyApLEdh5YYL0lo5orFdw_NtlPDsGvw0miQ"
+          android:value="GoogleMapApi"/>
         <activity android:name=".src.splash.SplashActivity"
             android:theme="@style/AppTheme.Splash">
 
